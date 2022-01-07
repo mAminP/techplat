@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/kavan.png",
+        "slug": 1,
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/banezh.png",
+        "slug": 2,
+        "category_id": 1
+    },
+    {
+        "id": 3,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/%D9%BE%DB%8C%D8%B4%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%20%D9%81%D9%86%E2%80%8C%D8%A2%D9%88%D8%B1%DB%8C%20%D8%B7%D8%A7%D9%87%D8%A7.png",
+        "slug": 3,
+        "category_id": 2
+    },
+    {
+        "id": 4,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/%D9%BE%DB%8C%D8%B4%D8%AA%D8%A7%D8%B2%D8%A7%D9%86%20%D9%81%D9%86%E2%80%8C%D8%A2%D9%88%D8%B1%DB%8C%20%D8%B7%D8%A7%D9%87%D8%A7.png",
+        "slug": 4,
+        "category_id": 3
+    },
+    {
+        "id": 5,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/%D8%AA%D8%A3%D9%85%DB%8C%D9%86%20%D8%A8%D8%B1%D9%82%20%D9%88%20%D8%A2%D8%A8%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86.png",
+        "slug": 6,
+        "category_id": 2
+    },
+    {
+        "id": 7,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/%D8%AA%D9%88%D8%B1%D8%A8%D9%88%D8%B3%DB%8C%D9%84.png",
+        "slug": 7,
+        "category_id": 4
+    },
+    {
+        "id": 8,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/%D8%B7%D9%84%D9%88%D8%B9%20%D8%A8%D8%A7%D9%88%D8%B1%20%D8%AC%D9%88%D8%A7%D9%86%D8%A7%D9%86%20%D9%BE%D8%A7%D8%B1%D8%B3.png",
+        "slug": 8,
+        "category_id": 3
+    },
+    {
+        "id": 9,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/%D8%B9%D9%85%D8%B1%D8%A7%D9%86%20%D8%A2%D8%B0%D8%B1%D8%B3%D8%AA%D8%A7%D9%86.png",
+        "slug": 9,
+        "category_id": 5
+    },
+    {
+        "id": 10,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/%DA%AF%D9%88%DB%8C%D8%A7%D9%86%20%D8%A7%D9%81%D8%B1%D8%A7%D8%B2.png",
+        "slug": 10,
+        "category_id": 6
+    },
+    {
+        "id": 11,
+        "title": "نام شرکت",
+        "image": "http://techplat.ir/assets/img/20.png",
+        "slug": 11,
+        "category_id": 7
+    }
+]

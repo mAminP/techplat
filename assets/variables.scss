@@ -1,0 +1,29 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$body-font-family: KALAMEH;
+$carousel-controls-bg: rgba(0, 0, 0,.1);
+$carousel-dot-inactive-opacity	:.3 !default;
+$skeleton-loader-image-height: 100% !default;
+$parallax-padding: 0  !default;
+// $text-field-outlined-fieldset-border:2px solid #008 !default;
+// $shadow-key-umbra-opacity: rgba(0,0,0, 0.5);
+// $shadow-key-penumbra-opacity: rgba(0,0,0, 0.9);
+// $shadow-key-ambient-opacity: rgba(0,0,0, 0.9);
+
+  $shadow-key-umbra-opacity: rgba(0,0,0, 0.025);
+  $shadow-key-penumbra-opacity: rgba(0,0,0, 0.009);
+  $shadow-key-ambient-opacity: rgba(0,0,0, 0.009);
+
+// $banner-y-padding: 0 !default;
+// $banner-content-padding: 0 !default;
+// $banner-end-padding: 0 !default;
+// $banner-start-padding: 0 !default;
+
+$border-radius-root: 8px;
+// $rounded: (
+//   'md': 8px,
+//   'lg': 13px
+// );

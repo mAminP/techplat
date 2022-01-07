@@ -1,0 +1,19 @@
+@font-face {
+  font-family: KALAMEH;
+  src: url('./fonts/KALAMEH-REGULAR.woff2') format('woff2'),
+    url('./fonts/KALAMEH-REGULAR.woff') format('woff'),
+    url('./fonts/KALAMEH-REGULAR.ttf') format('truetype')
+}
+.ff-kalameh{
+	font-family: KALAMEH;
+}
+
+@font-face {
+  font-family: KALAMEH-BOLD;
+  src: url('./fonts/KALAMEH-BOLD.woff2') format('woff2'),
+    url('./fonts/KALAMEH-BOLD.woff') format('woff'),
+    url('./fonts/KALAMEH-BOLD.ttf') format('truetype')
+}
+.ff-kalameh-bold{
+	font-family: KALAMEH-BOLD;
+}

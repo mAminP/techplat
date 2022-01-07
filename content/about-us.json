@@ -1,0 +1,16 @@
+{
+    "items":[
+        {"id":1 , "name":"محمد علیزاده", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"سیمین تاج زیرک ساز", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"امین صندوقی", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"زهرا دروگر", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"علیرضا مخبری نیا", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"سجاد خوشکنار", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"سارا اشراقی", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"سینا اعرابی مقدم", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"سینا اعرابی مقدم", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"سینا اعرابی مقدم", "image":"/images/about-us/a-7.jpg"},
+        {"id":1 , "name":"سینا اعرابی مقدم", "image":"/images/about-us/a-7.jpg"}
+
+    ]
+}
