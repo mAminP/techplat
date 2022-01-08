@@ -1,5 +1,14 @@
 <template>
   <v-card flat rounded="lg" class="text-center fill-height d-flex flex-column align-center">
+    <v-badge
+      class="ms-auto"
+      :value="item.badge"
+      dot
+      overlap
+      color="error"
+
+      bordered
+    />
     <v-card-text>
       <v-progress-circular
         :rotate="270"
@@ -28,12 +37,24 @@
       v-text="item.title"
     />
     <v-card-subtitle class="grey--text" v-text="item.subtitle" />
-    <v-card-actions class="mt-auto">
-      <v-btn :color="color" outlined>
-        ادامه خودارزیابی
+    <v-card-actions class="mt-auto d-flex flex-column">
+      <v-btn :color="color" :outlined="item.bought" depressed>
+        <template v-if="item.score === 100">
+          مشاهده نتیجه
+        </template>
+        <template v-else-if="!item.bought">
+          مشاهده محصول
+        </template>
+        <template v-else-if="item.bought && !item.done ||item.score < 100">
+          ادامه خودارزیابی
+        </template>
+
         <v-icon right>
-          $arrow-left
+          mdi-chevron-left
         </v-icon>
+      </v-btn>
+      <v-btn v-if="item.score" class="mt-3" plain>
+        جزئیات
       </v-btn>
     </v-card-actions>
   </v-card>

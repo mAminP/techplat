@@ -1,64 +1,70 @@
 {
-    "items":[
+    "items": [
         {
-            "id":1,
-            "slug":1,
-            "title":"خودارزیابی ارایه خدمت",
-            "subtitle":"خودارزیابی تک‌پلت",
-            "done":true,
+            "badge": false,
+            "id": 1,
+            "slug": 1,
+            "title": "خودارزیابی ارایه خدمت",
+            "subtitle": "خودارزیابی تک‌پلت",
+            "done": true,
             "bought": true,
-            "score":98,
-            "color":"warning"
+            "score": 98,
+            "color": "warning"
         },
         {
-            "id":2,
-            "slug":2,
-            "title":"خودارزیابی ارایه خدمت",
-            "subtitle":"خودارزیابی تک‌پلت",
-            "done":true,
+            "badge": false,
+            "id": 2,
+            "slug": 2,
+            "title": "خودارزیابی ارایه خدمت",
+            "subtitle": "خودارزیابی تک‌پلت",
+            "done": true,
             "bought": true,
-            "score":100,
-            "color":"primary"
+            "score": 100,
+            "color": "primary"
         },
         {
-            "id":3,
-            "slug":3,
-            "title":"خودارزیابی ارایه خدمت",
-            "subtitle":"خودارزیابی تک‌پلت",
-            "done":false,
+            "badge": true,
+            "id": 3,
+            "slug": 3,
+            "title": "خودارزیابی ارایه خدمت",
+            "subtitle": "خودارزیابی تک‌پلت",
+            "done": false,
             "bought": true,
-            "score":null,
-            "color":"info"
+            "score": null,
+            "color": "info"
         },
         {
-            "id":4,
-            "slug":4,
-            "title":"خودارزیابی ارایه خدمت",
-            "subtitle":"خودارزیابی تک‌پلت",
-            "done":false,
+            "badge": false,
+            "id": 4,
+            "slug": 4,
+            "title": "خودارزیابی ارایه خدمت",
+            "subtitle": "خودارزیابی تک‌پلت",
+            "done": false,
             "bought": false,
-            "score":null,
-            "color":"success"
+            "score": null,
+            "color": "success"
         },
         {
-            "id":5,
-            "slug":5,
-            "title":"خودارزیابی ارایه خدمت",
-            "subtitle":"خودارزیابی تک‌پلت",
-            "done":false,
+            "badge": false,
+            "id": 5,
+            "slug": 5,
+            "title": "خودارزیابی ارایه خدمت",
+            "subtitle": "خودارزیابی تک‌پلت",
+            "done": false,
             "bought": false,
-            "score":null,
-            "color":"info"
+            "score": null,
+            "color": "info"
         },
         {
-            "id":6,
-            "slug":6,
-            "title":"خودارزیابی ارایه خدمت",
-            "subtitle":"خودارزیابی تک‌پلت",
-            "done":false,
+            "badge": false,
+            "id": 6,
+            "slug": 6,
+            "title": "خودارزیابی ارایه خدمت",
+            "subtitle": "خودارزیابی تک‌پلت",
+            "done": false,
             "bought": false,
-            "score":null,
-            "color":"error"
+            "score": null,
+            "color": "error"
         }
     ]
 }
