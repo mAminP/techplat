@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "slug": 1,
+        "title": "خودارزیابی ارایه خدمت",
+        "subtitle": "خود ارزیابی تک‌پلت",
+        "color": "primary",
+        "disable": false
+    },
+    {
+        "id": 2,
+        "slug": 2,
+        "title": "خودارزیابی ارایه خدمت",
+        "subtitle": "خود ارزیابی تک‌پلت",
+        "color": "warning",
+        "disable": true
+    },
+    {
+        "id": 8,
+        "slug": 8,
+        "title": "خودارزیابی ارایه خدمت",
+        "subtitle": "خود ارزیابی تک‌پلت",
+        "color": "error",
+        "disable": false
+    },
+    {
+        "id": 3,
+        "slug": 3,
+        "title": "خودارزیابی ارایه خدمت",
+        "subtitle": "خود ارزیابی تک‌پلت",
+        "color": "success",
+        "disable": false
+    },
+    {
+        "id": 4,
+        "slug": 4,
+        "title": "خودارزیابی ارایه خدمت",
+        "subtitle": "خود ارزیابی تک‌پلت",
+        "color": "info",
+        "disable": true
+    },
+    {
+        "id": 5,
+        "slug": 5,
+        "title": "خودارزیابی ارایه خدمت",
+        "subtitle": "خود ارزیابی تک‌پلت",
+        "color": "error",
+        "disable": true
+    },
+    {
+        "id": 6,
+        "slug": 6,
+        "title": "خودارزیابی ارایه خدمت",
+        "subtitle": "خود ارزیابی تک‌پلت",
+        "color": "primary",
+        "disable": true
+    }
+]

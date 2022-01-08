@@ -198,6 +198,7 @@
       <v-container
         fluid
         :class="$vuetify.breakpoint.mdAndDown? '': 'pr-6'"
+        class="mt-5"
       >
         <Nuxt />
       </v-container>
@@ -212,25 +213,25 @@ import BasketModule from '~/store/BasketModule'
   middleware: ['auth']
 })
 export default class Default extends Vue {
-  exitDialog = false;
-  drawer = null;
-  mini = true;
+  exitDialog = false
+  drawer = null
+  mini = true
   routes = [
     {
       name: 'خانه',
       icon: '$home',
       to: { name: 'panel' }
     },
-    // {
-    //   name: 'خود ارزیابی',
-    //   icon: '$chart',
-    //   to: { name: 'index' }
-    // },
-    // {
-    //   name: 'نتایج',
-    //   icon: '$chartSquare',
-    //   to: { name: 'index' }
-    // },
+    {
+      name: 'خود ارزیابی',
+      icon: '$chart',
+      to: { name: 'panel-self-assessment' }
+    },
+    {
+      name: 'نتایج',
+      icon: '$chartSquare',
+      to: { name: 'panel-resluts' }
+    },
     {
       name: 'سبد خرید',
       icon: '$bag',
@@ -246,9 +247,9 @@ export default class Default extends Vue {
     //   icon: '$settings',
     //   to: { name: 'index' }
     // }
-  ];
+  ]
 
-  drawerRef: any = null;
+  drawerRef: any = null
 
   public get now (): string {
     return this.$moment(new Date()).format('jYYYY / jMM / jDD ')
