@@ -1,12 +1,17 @@
 <template>
-  <v-card flat rounded="lg" class="text-center fill-height d-flex flex-column align-center">
+  <v-card
+    flat
+    rounded="lg"
+    class="text-center fill-height d-flex flex-column align-center"
+  >
     <v-badge
-      class="ms-auto"
+      class="me-auto"
       :value="item.badge"
       dot
       overlap
+      left
+      offset-x="8"
       color="error"
-
       bordered
     />
     <v-card-text>
@@ -45,7 +50,7 @@
         <template v-else-if="!item.bought">
           مشاهده محصول
         </template>
-        <template v-else-if="item.bought && !item.done ||item.score < 100">
+        <template v-else-if="(item.bought && !item.done) || item.score < 100">
           ادامه خودارزیابی
         </template>
 

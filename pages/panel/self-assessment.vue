@@ -21,7 +21,55 @@
       </v-row>
     </v-col>
     <v-col cols="12" sm="12" md="4">
-      2
+      <v-row>
+        <v-col cols="12">
+          <v-card flat rounded="lg">
+            <v-badge
+              :value="true"
+              dot
+              overlap
+              left
+              color="error"
+              bordered
+            >
+              <v-subheader class="body-2 text-md-body-1 ">
+                <span class="ff-kalameh-bold">
+                  آخرین اخبار
+                </span>
+              </v-subheader>
+            </v-badge>
+            <v-list dense>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title>
+                    جهت استفاده از خودارزیابی پروفایل خود را آپدیت کنید.
+                  </v-list-item-title>
+                  <v-list-item-subtitle class="grey--text">
+                    امروز
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card>
+        </v-col>
+        <v-col cols="12">
+          <v-card flat rounded="lg">
+            <v-subheader class="body-2 text-md-body-1 ">
+              <span class="ff-kalameh-bold">
+                آخرین مطالب وبلاگ
+              </span>
+            </v-subheader>
+
+            <v-card-text>
+              <v-row dense>
+                <v-col v-for="(item,index2) in results.news" :key="index2" cols="12">
+                  <BlogCard :item="item" color="white" dense />
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-col>
   </v-row>
 </template>

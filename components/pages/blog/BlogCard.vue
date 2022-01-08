@@ -1,7 +1,7 @@
 <template>
-  <v-card color="grey lighten-4" class="overflow-hidden" flat rounded="lg">
+  <v-card :color="color" class="overflow-hidden" flat rounded="lg">
     <v-row dense align="center">
-      <v-col cols="3">
+      <v-col :cols="dense? 4:3">
         <v-img aspect-ratio="1.2" :src="item.image" class="rounded-lg overflow-hidden ma-2">
           <template #placeholder>
             <v-row
@@ -19,13 +19,17 @@
           </template>
         </v-img>
       </v-col>
-      <v-col cols="9" class="d-flex flex-column " align-self="stretch">
-        <v-card-title class="ff-kalameh-bold grey--text text--darken-2" v-text="item.title" />
-        <v-card-text class="grey--text" v-text="item.subtitle" />
+      <v-col :cols="dense? 8:9" class="d-flex flex-column " align-self="stretch">
+        <v-card-text :class="`${dense? 'text-subtitle-2':''}`" class=" grey--text text--darken-2 ps-3">
+          <component :is="dense? 'h5':'h4'" class="ff-kalameh-bold">
+            {{ item.title }}
+          </component>
+        </v-card-text>
+        <v-card-text :class="{'text-truncate caption': dense}" class=" grey--text" v-text="item.subtitle" />
         <v-card-actions class="mt-auto">
-          <v-btn plain>
+          <v-btn :small="dense" plain>
             ادامه مطلب
-            <v-icon small right>
+            <v-icon :small="!dense" :x-small="dense" right>
               $arrow-left
             </v-icon>
           </v-btn>
@@ -41,6 +45,8 @@ import { Vue, Component, Prop } from 'nuxt-property-decorator'
 @Component({})
 export default class BlogCard extends Vue {
 @Prop({ type: Object, required: true }) item!:any
+@Prop({ type: Boolean, required: false, default: false }) dense!:boolean
+@Prop({ type: String, required: false, default: 'grey lighten-4' }) color!:any
 }
 </script>
 
