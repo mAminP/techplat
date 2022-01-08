@@ -5,6 +5,8 @@ import colors from 'vuetify/es5/util/colors'
 
 // icons
 // @ts-ignore
+import IArrowLeft from '@/components/icons/IArrowLeft.vue'
+// @ts-ignore
 import IHome from '@/components/icons/IHome.vue'
 // @ts-ignore
 import IExit from '@/components/icons/IExit.vue'
@@ -35,6 +37,9 @@ export default function (_ctx: Context) {
     },
     icons: {
       values: {
+        'arrow-left': {
+          component: IArrowLeft
+        },
         'quote-left': {
           component: IQuoteLeft
         },
