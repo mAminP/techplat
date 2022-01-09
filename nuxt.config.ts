@@ -24,7 +24,7 @@ export default <NuxtConfig>{
     defaultLocale: 'fa',
     locales: ['fa']
   },
-  css: ['~/assets/main.css'],
+  css: ['~/assets/main.scss'],
 
   plugins: [
     { src: '~/plugins/vue-kinesis.js', mode: 'client' },

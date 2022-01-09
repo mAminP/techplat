@@ -237,11 +237,11 @@ export default class Default extends Vue {
       icon: '$bag',
       to: { name: 'panel-basket' }
     },
-    // {
-    //   name: 'تیکت',
-    //   icon: '$lable',
-    //   to: { name: 'index' }
-    // },
+    {
+      name: ' تیکت ها',
+      icon: '$lable',
+      to: { name: 'panel-tikets' }
+    },
     {
       name: 'اطلاعات تکمیلی',
       icon: '$edit',

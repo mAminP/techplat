@@ -213,39 +213,5 @@ export default class BasketPage extends Vue {
 </script>
 
 <style lang="scss" >
-.tbl {
-  table {
-    border-spacing: 0px 15px !important;
-    border-collapse: unset !important;
-  }
-  tbody {
-    border-radius: $border-radius-root * 2 !important;
-    overflow: hidden;
 
-    .v-data-table__empty-wrapper {
-      td {
-        border-radius: $border-radius-root * 2 !important;
-        overflow: hidden;
-      }
-      border-radius: $border-radius-root * 2 !important;
-      overflow: hidden;
-    }
-  }
-
-  tr {
-    background: var(--v-white-lighten4);
-  }
-
-  @media (min-width: 960px) {
-    td {
-      border-bottom: none !important;
-      padding: 25px 16px !important;
-    }
-
-    th {
-      border-bottom: none !important;
-      padding: 25px 16px !important;
-    }
-  }
-}
 </style>
