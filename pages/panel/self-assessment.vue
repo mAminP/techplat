@@ -5,14 +5,14 @@
         <span class="ff-kalameh-bold"> خودارزیابی‌های شما </span>
       </h1>
     </v-col>
-    <v-col cols="12" sm="12" md="8">
+    <v-col cols="12" sm="12" md="6" lg="8">
       <v-row>
         <v-col
           v-for="(item,index) in results.items"
           :key="index"
           cols="12"
           sm="6"
-          md="4"
+          md="6"
           lg="4"
           xl="3"
         >
@@ -20,7 +20,7 @@
         </v-col>
       </v-row>
     </v-col>
-    <v-col cols="12" sm="12" md="4">
+    <v-col cols="12" sm="12" md="6" lg="4">
       <v-row>
         <v-col cols="12">
           <v-card flat rounded="lg">
@@ -61,11 +61,49 @@
             </v-subheader>
 
             <v-card-text>
-              <v-row dense>
-                <v-col v-for="(item,index2) in results.news" :key="index2" cols="12">
-                  <BlogCard :item="item" color="white" dense />
-                </v-col>
-              </v-row>
+              <v-list three-line :dense="$vuetify.breakpoint.mdAndDown">
+                <v-list-item v-for="(item,index2) in results.news" :key="index2">
+                  <v-list-item-avatar rounded="lg" :size="$vuetify.breakpoint.mdAndDown? 80: 100">
+                    <v-avatar :size="$vuetify.breakpoint.mdAndDown? 80: 100" rounded="lg">
+                      <v-img aspect-ratio="1" :src="item.image">
+                        <template #placeholder>
+                          <v-row
+                            class="fill-height ma-0"
+                            align="center"
+                            justify="center"
+                          >
+                            <v-skeleton-loader
+                              type="image"
+                              class="rounded-xl"
+                              width="100%"
+                              height="100%"
+                            />
+                          </v-row>
+                        </template>
+                      </v-img>
+                    </v-avatar>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-subtitle>
+                      <v-icon color="grey lighten-1" size="15">
+                        mdi-clock-time-eight-outline
+                      </v-icon>
+                      <span class="caption">{{ $moment(item.createdAt).from() }}</span>
+                    </v-list-item-subtitle>
+                    <v-list-item-title>
+                      <span class="ff-kalameh-bold">{{ item.title }}</span>
+                    </v-list-item-title>
+                    <v-list-item-subtitle class="grey--text">
+                      <span>{{ item.subtitle }}</span>
+                    </v-list-item-subtitle>
+                    <v-list-item-subtitle class="mt-2">
+                      <v-btn small plain>
+                        ادامه مطلب
+                      </v-btn>
+                    </v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
             </v-card-text>
           </v-card>
         </v-col>
