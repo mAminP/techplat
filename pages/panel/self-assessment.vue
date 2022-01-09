@@ -8,7 +8,7 @@
     <v-col cols="12" sm="12" md="6" lg="8">
       <v-row>
         <v-col
-          v-for="(item,index) in results.items"
+          v-for="(item, index) in results.items"
           :key="index"
           cols="12"
           sm="6"
@@ -32,10 +32,8 @@
               color="error"
               bordered
             >
-              <v-subheader class="body-2 text-md-body-1 ">
-                <span class="ff-kalameh-bold">
-                  آخرین اخبار
-                </span>
+              <v-subheader class="body-2 text-md-body-1">
+                <span class="ff-kalameh-bold"> آخرین اخبار </span>
               </v-subheader>
             </v-badge>
             <v-list dense>
@@ -54,17 +52,24 @@
         </v-col>
         <v-col cols="12">
           <v-card flat rounded="lg">
-            <v-subheader class="body-2 text-md-body-1 ">
-              <span class="ff-kalameh-bold">
-                آخرین مطالب وبلاگ
-              </span>
+            <v-subheader class="body-2 text-md-body-1">
+              <span class="ff-kalameh-bold"> آخرین مطالب وبلاگ </span>
             </v-subheader>
 
             <v-card-text>
               <v-list three-line :dense="$vuetify.breakpoint.mdAndDown">
-                <v-list-item v-for="(item,index2) in results.news" :key="index2">
-                  <v-list-item-avatar rounded="lg" :size="$vuetify.breakpoint.mdAndDown? 80: 100">
-                    <v-avatar :size="$vuetify.breakpoint.mdAndDown? 80: 100" rounded="lg">
+                <v-list-item
+                  v-for="(item, index2) in results.news"
+                  :key="index2"
+                >
+                  <v-list-item-avatar
+                    rounded="lg"
+                    :size="$vuetify.breakpoint.mdAndDown ? 80 : 100"
+                  >
+                    <v-avatar
+                      :size="$vuetify.breakpoint.mdAndDown ? 80 : 100"
+                      rounded="lg"
+                    >
                       <v-img aspect-ratio="1" :src="item.image">
                         <template #placeholder>
                           <v-row
@@ -88,7 +93,9 @@
                       <v-icon color="grey lighten-1" size="15">
                         mdi-clock-time-eight-outline
                       </v-icon>
-                      <span class="caption">{{ $moment(item.createdAt).from() }}</span>
+                      <span class="caption">{{
+                        $moment(item.createdAt).from()
+                      }}</span>
                     </v-list-item-subtitle>
                     <v-list-item-title>
                       <span class="ff-kalameh-bold">{{ item.title }}</span>
@@ -105,6 +112,37 @@
                 </v-list-item>
               </v-list>
             </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-subheader class="body-2 text-md-body-1">
+            <span class="ff-kalameh-bold">
+              ویدیو آموزشی استفاده از خود ارزیابی
+            </span>
+          </v-subheader>
+          <v-card rounded="lg" flat class="overflow-hidden">
+            <v-img src="/images/vid.png">
+              <v-row
+                no-gutters
+                class="
+                  pb-3
+                  ps-5
+                  white--text
+                  fill-height
+                  d-flex
+                  flex-row
+                  align-end
+                  justify-start
+                "
+              >
+                <v-col cols="12">
+                  <h2>آموزش استفاده از خودارزیابی</h2>
+                  <p class="subtitle-2">
+                    موشن‌گرافی یا ویدئو اسکرین رکورد از فرایند خودارزیابی
+                  </p>
+                </v-col>
+              </v-row>
+            </v-img>
           </v-card>
         </v-col>
       </v-row>
@@ -135,10 +173,9 @@ import { Vue, Component, Prop } from 'nuxt-property-decorator'
   }
 })
 export default class SelfAssessment extends Vue {
-  results:any
+  results: any
 }
 </script>
 
 <style lang="scss">
-
 </style>

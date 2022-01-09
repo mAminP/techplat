@@ -28,6 +28,8 @@ import ICalendar from '@/components/icons/ICalendar.vue'
 import IMessage from '@/components/icons/IMessage.vue'
 // @ts-ignore
 import IQuoteLeft from '@/components/icons/IQuoteLeft.vue'
+// @ts-ignore
+import IEdit from '@/components/icons/IEdit.vue'
 export default function (_ctx: Context) {
   return {
     rtl: true,
@@ -42,6 +44,9 @@ export default function (_ctx: Context) {
         },
         'quote-left': {
           component: IQuoteLeft
+        },
+        edit: {
+          component: IEdit
         },
         message: {
           component: IMessage
